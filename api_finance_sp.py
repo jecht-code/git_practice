@@ -35,6 +35,7 @@ for ts in time_stamp:
     calendartime.append(dt.strftime("%m/%d/%Y %r"))
 print(calendartime)
 
+#could make a function here.
 stock_low = parsedata["chart"]["result"][0]["indicators"]["quote"][0]["low"]
 stock_close = parsedata["chart"]["result"][0]["indicators"]["quote"][0]["close"]
 stock_open = parsedata["chart"]["result"][0]["indicators"]["quote"][0]["open"]

@@ -42,6 +42,8 @@ stock_open = parsedata["chart"]["result"][0]["indicators"]["quote"][0]["open"]
 stock_high = parsedata["chart"]["result"][0]["indicators"]["quote"][0]["high"]
 stock_volume = parsedata["chart"]["result"][0]["indicators"]["quote"][0]["volume"]
 
+#will test here...
+
 my_dict = {'Time': calendartime,
 'Low': stock_low,
 'Close': stock_close,

@@ -36,14 +36,26 @@ for ts in time_stamp:
 print(calendartime)
 
 #could make a function here.
-stock_low = parsedata["chart"]["result"][0]["indicators"]["quote"][0]["low"]
-stock_close = parsedata["chart"]["result"][0]["indicators"]["quote"][0]["close"]
-stock_open = parsedata["chart"]["result"][0]["indicators"]["quote"][0]["open"]
-stock_high = parsedata["chart"]["result"][0]["indicators"]["quote"][0]["high"]
-stock_volume = parsedata["chart"]["result"][0]["indicators"]["quote"][0]["volume"]
+
+def test():
+    basic = parsedata["chart"]["result"][0]["indicators"]["quote"][0]
+    return basic
+
+stock_low = test()["low"]
+stock_close = test()["close"]
+stock_open = test()["open"]
+stock_high = test()["high"]
+stock_volume = test()["volume"]
+#========================================================================================
+#before i created the function i copied the parse data several times
+# stock_low = parsedata["chart"]["result"][0]["indicators"]["quote"][0]["low"]
+# stock_close = parsedata["chart"]["result"][0]["indicators"]["quote"][0]["close"]
+# stock_open = parsedata["chart"]["result"][0]["indicators"]["quote"][0]["open"]
+# stock_high = parsedata["chart"]["result"][0]["indicators"]["quote"][0]["high"]
+# stock_volume = parsedata["chart"]["result"][0]["indicators"]["quote"][0]["volume"]
+#========================================================================================
 
 #will test here...
-
 my_dict = {'Time': calendartime,
 'Low': stock_low,
 'Close': stock_close,
